@@ -33,7 +33,7 @@ test.describe('Flixo Main Page', () => {
     await expect(title).toHaveClass(/text-6xl font-extrabold/);
     
     // サブタイトルの確認
-    await expect(page.locator('text=YouTube動画を美しくシェアする')).toBeVisible();
+    await expect(page.locator('text=動画を美しくシェアする')).toBeVisible();
     
     // ヘッダー部分のスクリーンショット
     await page.locator('header').screenshot({ 

@@ -11,7 +11,7 @@ test.describe('Video Post Functionality', () => {
     await page.locator('text=動画を投稿').click();
     
     // フォームが表示されることを確認
-    await expect(page.locator('text=YouTubeの動画URLを入力して')).toBeVisible();
+    await expect(page.locator('text=動画URLを入力して')).toBeVisible();
     
     // フォームのスクリーンショット
     await page.screenshot({ 
