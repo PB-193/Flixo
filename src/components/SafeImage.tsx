@@ -76,7 +76,7 @@ export default function SafeImage({
         {/* YouTubeアイコン */}
         <div className="absolute top-4 right-4">
           <div className="bg-red-600 text-white px-2 py-1 rounded text-xs font-bold">
-            YouTube
+            VIDEO
           </div>
         </div>
       </div>

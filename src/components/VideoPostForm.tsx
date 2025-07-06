@@ -27,7 +27,7 @@ export default function VideoPostForm({ onVideoAdded, onCancel }: VideoPostFormP
     try {
       const videoId = extractYouTubeId(url)
       if (!videoId) {
-        alert('有効なYouTubeのURLを入力してください')
+        alert('有効な動画URLを入力してください')
         return
       }
 
@@ -73,7 +73,7 @@ export default function VideoPostForm({ onVideoAdded, onCancel }: VideoPostFormP
             動画を投稿
           </CardTitle>
           <CardDescription className="text-base text-slate-600">
-            YouTubeの動画URLを入力して、あなたのコレクションに追加しましょう
+            動画URLを入力して、あなたのコレクションに追加しましょう
           </CardDescription>
         </CardHeader>
         
@@ -81,7 +81,7 @@ export default function VideoPostForm({ onVideoAdded, onCancel }: VideoPostFormP
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="url" className="block text-sm font-semibold mb-2 text-slate-700">
-                YouTube URL *
+                動画 URL *
               </label>
               <Input
                 id="url"

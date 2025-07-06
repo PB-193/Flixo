@@ -122,12 +122,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4263,
+                      "duration": 4217,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:22.043Z",
+                      "startTime": "2025-07-06T15:42:11.186Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -156,12 +156,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3689,
+                      "duration": 3919,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:22.043Z",
+                      "startTime": "2025-07-06T15:42:11.179Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -190,12 +190,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 6114,
+                      "duration": 6446,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:22.043Z",
+                      "startTime": "2025-07-06T15:42:11.179Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -224,12 +224,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3693,
+                      "duration": 3965,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:22.067Z",
+                      "startTime": "2025-07-06T15:42:11.195Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -258,12 +258,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5682,
+                      "duration": 5819,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:28.046Z",
+                      "startTime": "2025-07-06T15:42:15.328Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -292,12 +292,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2894,
+                      "duration": 4138,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:28.058Z",
+                      "startTime": "2025-07-06T15:42:15.374Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -326,12 +326,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5459,
+                      "duration": 5407,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:28.626Z",
+                      "startTime": "2025-07-06T15:42:15.624Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -343,9 +343,26 @@
               "file": "hover-effects.spec.ts",
               "line": 124,
               "column": 7
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "image-error-handling.spec.ts",
+      "file": "image-error-handling.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Image Error Handling",
+          "file": "image-error-handling.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
             {
-              "title": "should test video card hover effects",
+              "title": "should handle image load failures gracefully",
               "ok": true,
               "tags": [],
               "tests": [
@@ -353,19 +370,19 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 7047,
+                      "duration": 6283,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:45.954Z",
+                      "startTime": "2025-07-06T15:42:17.870Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -373,13 +390,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "2755ddb9159089efe856-fa76a21e11f6a7c79445",
-              "file": "hover-effects.spec.ts",
+              "id": "91a32d90a688fda0d19b-37234cb5f7c3de697e2c",
+              "file": "image-error-handling.spec.ts",
               "line": 9,
               "column": 7
             },
             {
-              "title": "should test button hover effects",
+              "title": "should display fallback content for broken images",
               "ok": true,
               "tags": [],
               "tests": [
@@ -387,155 +404,19 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6223,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:01:47.832Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2755ddb9159089efe856-5509615cfb4b597c060c",
-              "file": "hover-effects.spec.ts",
-              "line": 31,
-              "column": 7
-            },
-            {
-              "title": "should test video preview on hover",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 8129,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:01:47.971Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2755ddb9159089efe856-7c3536c9b28406cf9f59",
-              "file": "hover-effects.spec.ts",
-              "line": 49,
-              "column": 7
-            },
-            {
-              "title": "should test gradient animations",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 8535,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:01:53.335Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2755ddb9159089efe856-b872aceac7e6d63eaf51",
-              "file": "hover-effects.spec.ts",
-              "line": 68,
-              "column": 7
-            },
-            {
-              "title": "should test fade-in animations",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 10613,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:01:54.429Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2755ddb9159089efe856-a40f035b7c1a64528abc",
-              "file": "hover-effects.spec.ts",
-              "line": 85,
-              "column": 7
-            },
-            {
-              "title": "should test form animations",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 8,
+                      "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3140,
+                      "duration": 5043,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:58.433Z",
+                      "startTime": "2025-07-06T15:42:19.537Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -543,13 +424,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "2755ddb9159089efe856-72fbadb21e31ae2880e7",
-              "file": "hover-effects.spec.ts",
-              "line": 104,
+              "id": "91a32d90a688fda0d19b-f1cb2f427f98fc98af78",
+              "file": "image-error-handling.spec.ts",
+              "line": 37,
               "column": 7
             },
             {
-              "title": "should test all interactive elements",
+              "title": "should maintain layout integrity with image errors",
               "ok": true,
               "tags": [],
               "tests": [
@@ -557,87 +438,19 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 5400,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:01:56.548Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2755ddb9159089efe856-aee9c66b17a7196181d8",
-              "file": "hover-effects.spec.ts",
-              "line": 124,
-              "column": 7
-            },
-            {
-              "title": "should test video card hover effects",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 5966,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:25.189Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2755ddb9159089efe856-c58e19d4066d81fdcccd",
-              "file": "hover-effects.spec.ts",
-              "line": 9,
-              "column": 7
-            },
-            {
-              "title": "should test button hover effects",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 11,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5072,
+                      "duration": 2744,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:02:26.753Z",
+                      "startTime": "2025-07-06T15:42:21.044Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -645,179 +458,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "2755ddb9159089efe856-8df3fbce41d5ca56cad8",
-              "file": "hover-effects.spec.ts",
-              "line": 31,
-              "column": 7
-            },
-            {
-              "title": "should test video preview on hover",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 8215,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:27.779Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2755ddb9159089efe856-dce6649b218a26df4971",
-              "file": "hover-effects.spec.ts",
-              "line": 49,
-              "column": 7
-            },
-            {
-              "title": "should test gradient animations",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4430,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:38.133Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2755ddb9159089efe856-b13204bd0abd8f7948b0",
-              "file": "hover-effects.spec.ts",
-              "line": 68,
-              "column": 7
-            },
-            {
-              "title": "should test fade-in animations",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 6935,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:39.063Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2755ddb9159089efe856-52f6a29c27947c5b8b10",
-              "file": "hover-effects.spec.ts",
-              "line": 85,
-              "column": 7
-            },
-            {
-              "title": "should test form animations",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 3322,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:41.324Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2755ddb9159089efe856-87081598e2be89397e84",
-              "file": "hover-effects.spec.ts",
-              "line": 104,
-              "column": 7
-            },
-            {
-              "title": "should test all interactive elements",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 7044,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:42.574Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2755ddb9159089efe856-e0e9cc01be1e2f417d19",
-              "file": "hover-effects.spec.ts",
-              "line": 124,
+              "id": "91a32d90a688fda0d19b-03ce4d8ecd8951753f2f",
+              "file": "image-error-handling.spec.ts",
+              "line": 57,
               "column": 7
             }
           ]
@@ -850,15 +493,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3269,
+                      "duration": 2791,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:30.503Z",
+                      "startTime": "2025-07-06T15:42:21.169Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -884,15 +527,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1986,
+                      "duration": 2643,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:30.969Z",
+                      "startTime": "2025-07-06T15:42:23.806Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -918,15 +561,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2203,
+                      "duration": 3155,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:32.972Z",
+                      "startTime": "2025-07-06T15:42:24.010Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -935,210 +578,6 @@
                 }
               ],
               "id": "33f5736246c5ed244e6d-eacf1a7cdd7590cc826b",
-              "file": "main-page.spec.ts",
-              "line": 44,
-              "column": 7
-            },
-            {
-              "title": "should load the main page and take screenshot",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 6693,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:01.925Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "33f5736246c5ed244e6d-e2b9272959d10ca8e2e1",
-              "file": "main-page.spec.ts",
-              "line": 8,
-              "column": 7
-            },
-            {
-              "title": "should display header elements correctly",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2758,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:01.929Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "33f5736246c5ed244e6d-d3e6fa5005d4cbb7fd8b",
-              "file": "main-page.spec.ts",
-              "line": 30,
-              "column": 7
-            },
-            {
-              "title": "should display gradient background correctly",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 6118,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:02.013Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "33f5736246c5ed244e6d-aa904a17c0990b7242b1",
-              "file": "main-page.spec.ts",
-              "line": 44,
-              "column": 7
-            },
-            {
-              "title": "should load the main page and take screenshot",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 5170,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:44.831Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "33f5736246c5ed244e6d-06a3996ae699b6403e17",
-              "file": "main-page.spec.ts",
-              "line": 8,
-              "column": 7
-            },
-            {
-              "title": "should display header elements correctly",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2371,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:46.050Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "33f5736246c5ed244e6d-23042646a710a5de0b9f",
-              "file": "main-page.spec.ts",
-              "line": 30,
-              "column": 7
-            },
-            {
-              "title": "should display gradient background correctly",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 13,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 7114,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:50.004Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "33f5736246c5ed244e6d-3c7c1129f627763486e4",
               "file": "main-page.spec.ts",
               "line": 44,
               "column": 7
@@ -1173,15 +612,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3771,
+                      "duration": 4112,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:33.743Z",
+                      "startTime": "2025-07-06T15:42:24.181Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1207,15 +646,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3372,
+                      "duration": 3633,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:33.799Z",
+                      "startTime": "2025-07-06T15:42:24.598Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1244,12 +683,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2968,
+                      "duration": 2600,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:34.105Z",
+                      "startTime": "2025-07-06T15:42:26.496Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1275,15 +714,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1639,
+                      "duration": 1961,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:35.216Z",
+                      "startTime": "2025-07-06T15:42:27.191Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1312,12 +751,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 18501,
+                      "duration": 16482,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:36.871Z",
+                      "startTime": "2025-07-06T15:42:28.242Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1326,360 +765,6 @@
                 }
               ],
               "id": "a027f4963a965b420d0c-24dbb3e36301d70ba4a9",
-              "file": "responsive-design.spec.ts",
-              "line": 78,
-              "column": 7
-            },
-            {
-              "title": "should display correctly on desktop",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 10411,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:04.761Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a027f4963a965b420d0c-74c22b482ee35375183b",
-              "file": "responsive-design.spec.ts",
-              "line": 4,
-              "column": 7
-            },
-            {
-              "title": "should display correctly on tablet",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 7490,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:05.074Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a027f4963a965b420d0c-4987bd02779782c7c3db",
-              "file": "responsive-design.spec.ts",
-              "line": 20,
-              "column": 7
-            },
-            {
-              "title": "should display correctly on mobile",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 6952,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:08.145Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a027f4963a965b420d0c-27ea9315f037bdd9f2e3",
-              "file": "responsive-design.spec.ts",
-              "line": 36,
-              "column": 7
-            },
-            {
-              "title": "should handle mobile video post form",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2413,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:08.636Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a027f4963a965b420d0c-c219fad7cc70b53b95da",
-              "file": "responsive-design.spec.ts",
-              "line": 59,
-              "column": 7
-            },
-            {
-              "title": "should test various breakpoints",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 3,
-                      "status": "timedOut",
-                      "duration": 36591,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:11.065Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/ootake_ikumi/work/Flixo_PJ/test-results/responsive-design-Responsi-016d2-ld-test-various-breakpoints-Mobile-Chrome/error-context.md"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "a027f4963a965b420d0c-34a17f875ca352f93b3f",
-              "file": "responsive-design.spec.ts",
-              "line": 78,
-              "column": 7
-            },
-            {
-              "title": "should display correctly on desktop",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 8437,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:48.439Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a027f4963a965b420d0c-f2a7c45b4a908959306b",
-              "file": "responsive-design.spec.ts",
-              "line": 4,
-              "column": 7
-            },
-            {
-              "title": "should display correctly on tablet",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6302,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:49.652Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a027f4963a965b420d0c-9af720f2d0fded758969",
-              "file": "responsive-design.spec.ts",
-              "line": 20,
-              "column": 7
-            },
-            {
-              "title": "should display correctly on mobile",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 5496,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:50.045Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a027f4963a965b420d0c-d0ffe4c53551a8558d24",
-              "file": "responsive-design.spec.ts",
-              "line": 36,
-              "column": 7
-            },
-            {
-              "title": "should handle mobile video post form",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2528,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:55.645Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a027f4963a965b420d0c-ac0b057458aebc83273c",
-              "file": "responsive-design.spec.ts",
-              "line": 59,
-              "column": 7
-            },
-            {
-              "title": "should test various breakpoints",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 18476,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:55.970Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "a027f4963a965b420d0c-a72e28f78e22650b9968",
               "file": "responsive-design.spec.ts",
               "line": 78,
               "column": 7
@@ -1703,7 +788,7 @@
           "specs": [
             {
               "title": "should display video cards correctly",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -1714,55 +799,20 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 1826,
-                      "error": {
-                        "message": "Error: expect: Property 'toHaveCountGreaterThan' not found.",
-                        "stack": "Error: expect: Property 'toHaveCountGreaterThan' not found.\n    at /Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts:15:29",
-                        "location": {
-                          "file": "/Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts",
-                          "column": 29,
-                          "line": 15
-                        },
-                        "snippet": "  13 |     \n  14 |     // 最低でも2つの動画カードが表示されることを確認\n> 15 |     await expect(videoCards).toHaveCountGreaterThan(1);\n     |                             ^\n  16 |     \n  17 |     // 動画グリッドのスクリーンショット\n  18 |     await page.locator('main').screenshot({ "
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts",
-                            "column": 29,
-                            "line": 15
-                          },
-                          "message": "Error: expect: Property 'toHaveCountGreaterThan' not found.\n\n  13 |     \n  14 |     // 最低でも2つの動画カードが表示されることを確認\n> 15 |     await expect(videoCards).toHaveCountGreaterThan(1);\n     |                             ^\n  16 |     \n  17 |     // 動画グリッドのスクリーンショット\n  18 |     await page.locator('main').screenshot({ \n    at /Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts:15:29"
-                        }
-                      ],
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2774,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:37.096Z",
+                      "startTime": "2025-07-06T15:42:28.311Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/ootake_ikumi/work/Flixo_PJ/test-results/video-grid-Video-Grid-Disp-3e9e8-splay-video-cards-correctly-chromium/test-failed-1.png"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/ootake_ikumi/work/Flixo_PJ/test-results/video-grid-Video-Grid-Disp-3e9e8-splay-video-cards-correctly-chromium/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts",
-                        "column": 29,
-                        "line": 15
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "112cbbb0df31b9b58f63-8695fece8be80efdd4dd",
@@ -1783,15 +833,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1928,
+                      "duration": 2447,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:37.185Z",
+                      "startTime": "2025-07-06T15:42:29.120Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1801,7 +851,7 @@
               ],
               "id": "112cbbb0df31b9b58f63-e8a2d734f46331c0d263",
               "file": "video-grid.spec.ts",
-              "line": 23,
+              "line": 24,
               "column": 7
             },
             {
@@ -1820,12 +870,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2657,
+                      "duration": 3276,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:37.534Z",
+                      "startTime": "2025-07-06T15:42:29.188Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1835,7 +885,7 @@
               ],
               "id": "112cbbb0df31b9b58f63-7ee0409b1f2042a77211",
               "file": "video-grid.spec.ts",
-              "line": 44,
+              "line": 45,
               "column": 7
             },
             {
@@ -1851,15 +901,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2571,
+                      "duration": 2639,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:40.222Z",
+                      "startTime": "2025-07-06T15:42:31.092Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1869,349 +919,7 @@
               ],
               "id": "112cbbb0df31b9b58f63-3d10610d834b0bbccfa0",
               "file": "video-grid.spec.ts",
-              "line": 65,
-              "column": 7
-            },
-            {
-              "title": "should display video cards correctly",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 3945,
-                      "error": {
-                        "message": "Error: expect: Property 'toHaveCountGreaterThan' not found.",
-                        "stack": "Error: expect: Property 'toHaveCountGreaterThan' not found.\n    at /Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts:15:29",
-                        "location": {
-                          "file": "/Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts",
-                          "column": 29,
-                          "line": 15
-                        },
-                        "snippet": "  13 |     \n  14 |     // 最低でも2つの動画カードが表示されることを確認\n> 15 |     await expect(videoCards).toHaveCountGreaterThan(1);\n     |                             ^\n  16 |     \n  17 |     // 動画グリッドのスクリーンショット\n  18 |     await page.locator('main').screenshot({ "
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts",
-                            "column": 29,
-                            "line": 15
-                          },
-                          "message": "Error: expect: Property 'toHaveCountGreaterThan' not found.\n\n  13 |     \n  14 |     // 最低でも2つの動画カードが表示されることを確認\n> 15 |     await expect(videoCards).toHaveCountGreaterThan(1);\n     |                             ^\n  16 |     \n  17 |     // 動画グリッドのスクリーンショット\n  18 |     await page.locator('main').screenshot({ \n    at /Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts:15:29"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:12.576Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/ootake_ikumi/work/Flixo_PJ/test-results/video-grid-Video-Grid-Disp-3e9e8-splay-video-cards-correctly-Mobile-Chrome/test-failed-1.png"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/ootake_ikumi/work/Flixo_PJ/test-results/video-grid-Video-Grid-Disp-3e9e8-splay-video-cards-correctly-Mobile-Chrome/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts",
-                        "column": 29,
-                        "line": 15
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "112cbbb0df31b9b58f63-c822dc07e260d505d8a1",
-              "file": "video-grid.spec.ts",
-              "line": 9,
-              "column": 7
-            },
-            {
-              "title": "should display video card elements",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3213,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:15.125Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "112cbbb0df31b9b58f63-b65f7549c5cfba15f58d",
-              "file": "video-grid.spec.ts",
-              "line": 23,
-              "column": 7
-            },
-            {
-              "title": "should display video card hover effects",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 4169,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:15.190Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "112cbbb0df31b9b58f63-f7506e716474c8800b38",
-              "file": "video-grid.spec.ts",
-              "line": 44,
-              "column": 7
-            },
-            {
-              "title": "should handle video card click",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 9,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3044,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:18.798Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "112cbbb0df31b9b58f63-ec98d1df9f6236dcac79",
-              "file": "video-grid.spec.ts",
-              "line": 65,
-              "column": 7
-            },
-            {
-              "title": "should display video cards correctly",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 1811,
-                      "error": {
-                        "message": "Error: expect: Property 'toHaveCountGreaterThan' not found.",
-                        "stack": "Error: expect: Property 'toHaveCountGreaterThan' not found.\n    at /Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts:15:29",
-                        "location": {
-                          "file": "/Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts",
-                          "column": 29,
-                          "line": 15
-                        },
-                        "snippet": "  13 |     \n  14 |     // 最低でも2つの動画カードが表示されることを確認\n> 15 |     await expect(videoCards).toHaveCountGreaterThan(1);\n     |                             ^\n  16 |     \n  17 |     // 動画グリッドのスクリーンショット\n  18 |     await page.locator('main').screenshot({ "
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts",
-                            "column": 29,
-                            "line": 15
-                          },
-                          "message": "Error: expect: Property 'toHaveCountGreaterThan' not found.\n\n  13 |     \n  14 |     // 最低でも2つの動画カードが表示されることを確認\n> 15 |     await expect(videoCards).toHaveCountGreaterThan(1);\n     |                             ^\n  16 |     \n  17 |     // 動画グリッドのスクリーンショット\n  18 |     await page.locator('main').screenshot({ \n    at /Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts:15:29"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:56.901Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/ootake_ikumi/work/Flixo_PJ/test-results/video-grid-Video-Grid-Disp-3e9e8-splay-video-cards-correctly-Mobile-Safari/test-failed-1.png"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/ootake_ikumi/work/Flixo_PJ/test-results/video-grid-Video-Grid-Disp-3e9e8-splay-video-cards-correctly-Mobile-Safari/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/ootake_ikumi/work/Flixo_PJ/tests/video-grid.spec.ts",
-                        "column": 29,
-                        "line": 15
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "112cbbb0df31b9b58f63-78483eb272a8240c0a21",
-              "file": "video-grid.spec.ts",
-              "line": 9,
-              "column": 7
-            },
-            {
-              "title": "should display video card elements",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 13,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2155,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:57.902Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "112cbbb0df31b9b58f63-0b8cf06753d2750e92d0",
-              "file": "video-grid.spec.ts",
-              "line": 23,
-              "column": 7
-            },
-            {
-              "title": "should display video card hover effects",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2998,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:58.215Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "112cbbb0df31b9b58f63-d65e7b114ff82aae9959",
-              "file": "video-grid.spec.ts",
-              "line": 44,
-              "column": 7
-            },
-            {
-              "title": "should handle video card click",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 14,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2743,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:59.975Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "112cbbb0df31b9b58f63-87e4aaa76d26b958e977",
-              "file": "video-grid.spec.ts",
-              "line": 65,
+              "line": 66,
               "column": 7
             }
           ]
@@ -2244,15 +952,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1759,
+                      "duration": 2427,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:39.127Z",
+                      "startTime": "2025-07-06T15:42:31.603Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2281,12 +989,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2034,
+                      "duration": 2670,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:40.211Z",
+                      "startTime": "2025-07-06T15:42:32.483Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2315,12 +1023,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2281,
+                      "duration": 2931,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:40.906Z",
+                      "startTime": "2025-07-06T15:42:33.750Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2346,15 +1054,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3601,
+                      "duration": 4048,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:42.258Z",
+                      "startTime": "2025-07-06T15:42:34.039Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2380,15 +1088,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2328,
+                      "duration": 3583,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:01:43.124Z",
+                      "startTime": "2025-07-06T15:42:35.166Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2400,9 +1108,26 @@
               "file": "video-post.spec.ts",
               "line": 89,
               "column": 7
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "visual-test.spec.ts",
+      "file": "visual-test.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Visual Regression Tests",
+          "file": "visual-test.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
             {
-              "title": "should open video post form",
+              "title": "should capture main page screenshot",
               "ok": true,
               "tags": [],
               "tests": [
@@ -2410,53 +1135,19 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1957,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:18.358Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "28b47a22ea69721a3814-adecd74e94961b2fd244",
-              "file": "video-post.spec.ts",
-              "line": 9,
-              "column": 7
-            },
-            {
-              "title": "should display form elements correctly",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 5,
+                      "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2106,
+                      "duration": 3746,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:02:19.398Z",
+                      "startTime": "2025-07-06T15:42:36.700Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2464,13 +1155,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "28b47a22ea69721a3814-c364568aa76384e6bcff",
-              "file": "video-post.spec.ts",
-              "line": 22,
+              "id": "96d90550abb332847281-44ed616440d9006bb3fd",
+              "file": "visual-test.spec.ts",
+              "line": 4,
               "column": 7
             },
             {
-              "title": "should validate required fields",
+              "title": "should capture video post form screenshot",
               "ok": true,
               "tags": [],
               "tests": [
@@ -2478,87 +1169,19 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3485,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:20.343Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "28b47a22ea69721a3814-2e87b4103e9ff5f5be2a",
-              "file": "video-post.spec.ts",
-              "line": 42,
-              "column": 7
-            },
-            {
-              "title": "should submit form with valid data",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 5214,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:02:21.527Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "28b47a22ea69721a3814-a937a0bc995166ca389b",
-              "file": "video-post.spec.ts",
-              "line": 58,
-              "column": 7
-            },
-            {
-              "title": "should cancel form submission",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 9,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3316,
+                      "duration": 3044,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:02:22.126Z",
+                      "startTime": "2025-07-06T15:42:38.108Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2566,13 +1189,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "28b47a22ea69721a3814-bea8eb89e6219e4b1367",
-              "file": "video-post.spec.ts",
-              "line": 89,
+              "id": "96d90550abb332847281-e2c75831c04093f30395",
+              "file": "visual-test.spec.ts",
+              "line": 15,
               "column": 7
             },
             {
-              "title": "should open video post form",
+              "title": "should test responsive design",
               "ok": true,
               "tags": [],
               "tests": [
@@ -2580,121 +1203,19 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2175,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:03:00.077Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "28b47a22ea69721a3814-36773f2ee477e3310ccf",
-              "file": "video-post.spec.ts",
-              "line": 9,
-              "column": 7
-            },
-            {
-              "title": "should display form elements correctly",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2194,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:03:01.228Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "28b47a22ea69721a3814-d8ecd9458042d722c73a",
-              "file": "video-post.spec.ts",
-              "line": 22,
-              "column": 7
-            },
-            {
-              "title": "should validate required fields",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 13,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 2086,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:03:02.265Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "28b47a22ea69721a3814-29fb559c5e36c39cfd3b",
-              "file": "video-post.spec.ts",
-              "line": 42,
-              "column": 7
-            },
-            {
-              "title": "should submit form with valid data",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 14,
+                      "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3685,
+                      "duration": 4984,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-06T15:03:03.188Z",
+                      "startTime": "2025-07-06T15:42:38.767Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2702,43 +1223,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "28b47a22ea69721a3814-8a43a0e19a7d67c15d0a",
-              "file": "video-post.spec.ts",
-              "line": 58,
-              "column": 7
-            },
-            {
-              "title": "should cancel form submission",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2131,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T15:03:03.447Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "28b47a22ea69721a3814-0fee266bb1cc8f67cdc8",
-              "file": "video-post.spec.ts",
-              "line": 89,
+              "id": "96d90550abb332847281-f7cbc52bd06c73284e9d",
+              "file": "visual-test.spec.ts",
+              "line": 29,
               "column": 7
             }
           ]
@@ -2748,11 +1235,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-07-06T15:01:15.942Z",
-    "duration": 118648.051,
-    "expected": 68,
+    "startTime": "2025-07-06T15:42:10.597Z",
+    "duration": 34182.594,
+    "expected": 30,
     "skipped": 0,
-    "unexpected": 4,
+    "unexpected": 0,
     "flaky": 0
   }
 }
