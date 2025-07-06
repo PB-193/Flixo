@@ -32,4 +32,14 @@ dist/
 
 # Logs
 logs
-*.log 
+*.log
+
+# Playwright test results
+test-results/
+playwright-report/
+tests/**/test-results/
+tests/**/*-snapshots/
+
+# Next.js
+.next/
+out/ 
