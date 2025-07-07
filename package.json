@@ -18,7 +18,10 @@
     "test:report": "npx playwright show-report",
     "test:clean": "rm -rf test-results/* playwright-report/*",
     "test:all": "./scripts/test.sh all",
-    "test:quick": "./scripts/test.sh desktop"
+    "test:quick": "./scripts/test.sh desktop",
+    "push": "./scripts/auto-test-push.sh",
+    "push:develop": "./scripts/auto-test-push.sh develop",
+    "push:main": "./scripts/auto-test-push.sh main"
   },
   "dependencies": {
     "@types/node": "22.10.1",

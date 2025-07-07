@@ -27,7 +27,7 @@ export default function Home() {
             <div className="absolute -top-2 -right-2 w-4 h-4 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full animate-pulse"></div>
           </div>
           <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-            🎬 YouTube動画を美しくシェアする、次世代プラットフォーム
+            🎬 動画を美しくシェアする、次世代プラットフォーム
           </p>
           <Button 
             className="mb-8 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300" 

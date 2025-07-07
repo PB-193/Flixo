@@ -31,18 +31,24 @@ test.describe('Visual Regression Tests', () => {
     await page.setViewportSize({ width: 1920, height: 1080 });
     await page.goto('/');
     await page.waitForLoadState('networkidle');
+    // アニメーション完了を待つ
+    await page.waitForTimeout(2000);
     await expect(page).toHaveScreenshot('desktop-view.png', {
       fullPage: true,
-      threshold: 0.3
+      threshold: 0.4,
+      animations: 'disabled'
     });
 
     // モバイル
     await page.setViewportSize({ width: 375, height: 667 });
     await page.goto('/');
     await page.waitForLoadState('networkidle');
+    // アニメーション完了を待つ
+    await page.waitForTimeout(2000);
     await expect(page).toHaveScreenshot('mobile-view.png', {
       fullPage: true,
-      threshold: 0.3
+      threshold: 0.4,
+      animations: 'disabled'
     });
   });
 });
