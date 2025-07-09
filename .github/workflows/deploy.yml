@@ -51,7 +51,9 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: |
+      (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'pull_request' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main')
     
     steps:
     - name: Checkout code
@@ -80,21 +82,13 @@ jobs:
       uses: actions/github-script@v7
       with:
         script: |
-          const { data: deployment } = await github.rest.repos.listDeployments({
+          const deploymentUrl = `https://${context.repo.repo}.vercel.app`;
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            ref: 'main'
+            body: `🚀 デプロイが完了しました！\n\n**本番URL**: ${deploymentUrl}\n\n✅ テストも正常に通過しました。`
           });
-          
-          if (deployment.length > 0) {
-            const deploymentUrl = `https://${context.repo.repo}.vercel.app`;
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: `🚀 デプロイが完了しました！\n\n**本番URL**: ${deploymentUrl}\n\n✅ テストも正常に通過しました。`
-            });
-          }
 
   notify:
     needs: [test, deploy]
