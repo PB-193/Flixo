@@ -13,7 +13,6 @@ interface VideoCardProps {
 
 export default function VideoCard({ video }: VideoCardProps) {
   const [isHovered, setIsHovered] = useState(false)
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [longPressTimer, setLongPressTimer] = useState<NodeJS.Timeout | null>(null)
   const cardRef = useRef<HTMLDivElement>(null)
   
@@ -24,25 +23,15 @@ export default function VideoCard({ video }: VideoCardProps) {
     window.open(video.url, '_blank')
   }
 
-  const handleMouseEnter = (e: React.MouseEvent) => {
+  const handleMouseEnter = () => {
     setIsHovered(true)
-    setMousePosition({ x: e.clientX, y: e.clientY })
   }
 
   const handleMouseLeave = () => {
     setIsHovered(false)
   }
 
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (isHovered) {
-      setMousePosition({ x: e.clientX, y: e.clientY })
-    }
-  }
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    const touch = e.touches[0]
-    setMousePosition({ x: touch.clientX, y: touch.clientY })
-    
+  const handleTouchStart = () => {
     const timer = setTimeout(() => {
       setIsHovered(true)
     }, 800)
@@ -66,13 +55,11 @@ export default function VideoCard({ video }: VideoCardProps) {
   }
 
   return (
-    <>
-      <Card 
+    <Card 
         ref={cardRef}
-        className="group cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20 bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:bg-white/90 dark:bg-slate-800/80 dark:hover:bg-slate-800/90 overflow-hidden"
+        className="group cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20 bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:bg-white/90 dark:bg-slate-800/80 dark:hover:bg-slate-800/90 overflow-hidden relative"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        onMouseMove={handleMouseMove}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
         onTouchMove={handleTouchMove}
@@ -134,13 +121,11 @@ export default function VideoCard({ video }: VideoCardProps) {
             </div>
           </div>
         </CardContent>
-      </Card>
-      
-      <VideoPreview
-        video={video}
-        isVisible={isHovered}
-        position={mousePosition}
-      />
-    </>
+        
+        <VideoPreview
+          video={video}
+          isVisible={isHovered}
+        />
+    </Card>
   )
 }

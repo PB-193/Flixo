@@ -10,9 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 3
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -36,9 +34,7 @@
         "outputDir": "/Users/ootake_ikumi/work/Flixo_PJ/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 3
-        },
+        "metadata": {},
         "id": "chromium",
         "name": "chromium",
         "testDir": "/Users/ootake_ikumi/work/Flixo_PJ/tests",
@@ -52,9 +48,7 @@
         "outputDir": "/Users/ootake_ikumi/work/Flixo_PJ/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 3
-        },
+        "metadata": {},
         "id": "Mobile Chrome",
         "name": "Mobile Chrome",
         "testDir": "/Users/ootake_ikumi/work/Flixo_PJ/tests",
@@ -68,9 +62,7 @@
         "outputDir": "/Users/ootake_ikumi/work/Flixo_PJ/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {
-          "actualWorkers": 3
-        },
+        "metadata": {},
         "id": "Mobile Safari",
         "name": "Mobile Safari",
         "testDir": "/Users/ootake_ikumi/work/Flixo_PJ/tests",
@@ -82,7 +74,7 @@
       }
     ],
     "shard": null,
-    "updateSnapshots": "changed",
+    "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.53.2",
     "workers": 4,
@@ -92,132 +84,17 @@
       "reuseExistingServer": true
     }
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "visual-test.spec.ts",
-      "file": "visual-test.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Visual Regression Tests",
-          "file": "visual-test.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "should test responsive design",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 8206,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T16:00:38.365Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "96d90550abb332847281-f7cbc52bd06c73284e9d",
-              "file": "visual-test.spec.ts",
-              "line": 29,
-              "column": 7
-            },
-            {
-              "title": "should test responsive design",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 8521,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T16:00:38.377Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "96d90550abb332847281-16d69aaccc34ebb6c6ff",
-              "file": "visual-test.spec.ts",
-              "line": 29,
-              "column": 7
-            },
-            {
-              "title": "should test responsive design",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 9820,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-06T16:00:38.369Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "96d90550abb332847281-148c3aa71d38468f2bdc",
-              "file": "visual-test.spec.ts",
-              "line": 29,
-              "column": 7
-            }
-          ]
-        }
-      ]
+      "message": "Error: Timed out waiting 60000ms from config.webServer.",
+      "stack": "Error: Timed out waiting 60000ms from config.webServer."
     }
   ],
-  "errors": [],
   "stats": {
-    "startTime": "2025-07-06T16:00:37.578Z",
-    "duration": 10976.491,
-    "expected": 3,
+    "startTime": "2025-07-08T14:15:53.753Z",
+    "duration": 60069.104999999996,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

@@ -1,6 +1,7 @@
 import { Video } from '@/types/video'
 
-let videos: Video[] = [
+// 本番環境では空の配列からスタート
+let videos: Video[] = process.env.NODE_ENV === 'production' ? [] : [
   {
     id: '1',
     title: 'Rick Astley - Never Gonna Give You Up',

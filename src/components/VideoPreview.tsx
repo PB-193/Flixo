@@ -7,10 +7,9 @@ import { extractYouTubeId } from '@/lib/utils'
 interface VideoPreviewProps {
   video: Video
   isVisible: boolean
-  position: { x: number; y: number }
 }
 
-export default function VideoPreview({ video, isVisible, position }: VideoPreviewProps) {
+export default function VideoPreview({ video, isVisible }: VideoPreviewProps) {
   const [showPreview, setShowPreview] = useState(false)
   const videoId = extractYouTubeId(video.url)
 
@@ -33,23 +32,17 @@ export default function VideoPreview({ video, isVisible, position }: VideoPrevie
 
   return (
     <div
-      className="fixed z-50 w-80 h-48 bg-background border border-border rounded-lg shadow-lg pointer-events-none"
-      style={{
-        left: position.x,
-        top: position.y,
-        transform: 'translate(-50%, -100%)'
-      }}
+      className="absolute inset-0 z-50 bg-black/90 flex items-center justify-center rounded-lg overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
     >
-      <div className="relative w-full h-full">
+      <div className="relative w-4/5 h-4/5 max-w-md">
         <iframe
           src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1`}
-          className="w-full h-full rounded-lg"
+          className="w-full h-full rounded-lg border-2 border-white/20"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
-        <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-2 rounded-b-lg">
+        <div className="absolute -bottom-8 left-0 right-0 text-white text-center">
           <p className="text-sm font-medium truncate">{video.title}</p>
-          <p className="text-xs text-gray-300 truncate">{video.category}</p>
         </div>
       </div>
     </div>
