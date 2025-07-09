@@ -45,7 +45,7 @@ export default function Home() {
               onCancel={() => setShowPostForm(false)}
             />
           ) : (
-            <VideoGrid videos={videos} />
+            <VideoGrid videos={videos} onAddVideo={() => setShowPostForm(true)} />
           )}
         </main>
       </div>

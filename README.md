@@ -92,29 +92,123 @@ npm run dev
 
 ## 🧪 テスト
 
-### テスト実行
+### 📋 テスト実行方法
+
+開発サーバーを起動してからテストを実行してください：
 
 ```bash
-# 全テスト実行
-npm test
+# 1. 開発サーバーを起動（別ターミナル）
+npm run dev
 
-# UIモードでテスト実行
-npm run test:ui
-
-# デバッグモードでテスト実行
-npm run test:debug
-
-# Playwrightブラウザのインストール（初回のみ）
-npx playwright install
+# 2. テストを実行
+npm test                    # 全テスト実行
+npm run test:ui            # UIモードでテスト実行
+npm run test:debug         # デバッグモードでテスト実行
 ```
 
-### テスト対象
+### 🚀 簡単テスト実行（推奨）
 
-- ✅ **メインページ表示** - ページ読み込み、ヘッダー、背景
-- ✅ **動画グリッド** - カード表示、ホバー効果、クリック動作
-- ✅ **投稿機能** - フォーム表示、バリデーション、送信処理
-- ✅ **レスポンシブデザイン** - 7 つのブレークポイント対応
-- ✅ **ホバーエフェクト** - アニメーション、プレビュー機能
+専用のテストスクリプトを使用すると、より簡単にテストを実行できます：
+
+```bash
+# 基本的な使用方法
+./scripts/test.sh [option]
+
+# 使用例
+./scripts/test.sh all      # 全テスト実行（デフォルト）
+./scripts/test.sh ui       # UIモードでテスト実行
+./scripts/test.sh visual   # ビジュアルテストのみ実行
+./scripts/test.sh mobile   # モバイルテストのみ実行
+./scripts/test.sh desktop  # デスクトップテストのみ実行
+./scripts/test.sh report   # HTMLレポートを開く
+./scripts/test.sh clean    # テスト結果をクリーンアップ
+./scripts/test.sh help     # ヘルプ表示
+```
+
+### 🔧 初回セットアップ
+
+初回のみ、Playwright ブラウザのインストールが必要です：
+
+```bash
+# Playwrightブラウザのインストール
+npx playwright install
+
+# または、テストスクリプトで
+./scripts/test.sh install
+```
+
+### 📊 テスト結果の確認
+
+テスト実行後、以下で結果を確認できます：
+
+```bash
+# HTMLレポートを開く
+./scripts/test.sh report
+
+# または手動で
+open playwright-report/index.html  # macOS
+xdg-open playwright-report/index.html  # Linux
+```
+
+### 🎯 テスト対象機能
+
+| テストカテゴリ       | 対象機能                                     | ファイル                       |
+| -------------------- | -------------------------------------------- | ------------------------------ |
+| **メインページ**     | ページ読み込み、ヘッダー、背景グラデーション | `main-page.spec.ts`            |
+| **動画グリッド**     | カード表示、ホバー効果、クリック動作         | `video-grid.spec.ts`           |
+| **投稿機能**         | フォーム表示、バリデーション、送信処理       | `video-post.spec.ts`           |
+| **レスポンシブ**     | 7 つのブレークポイント対応                   | `responsive-design.spec.ts`    |
+| **ホバーエフェクト** | アニメーション、プレビュー機能               | `hover-effects.spec.ts`        |
+| **画像エラー処理**   | SafeImage コンポーネント                     | `image-error-handling.spec.ts` |
+| **ビジュアル回帰**   | スクリーンショット比較                       | `visual-test.spec.ts`          |
+
+### 🛠️ 便利なテストオプション
+
+```bash
+# 特定のテストファイルのみ実行
+npx playwright test tests/main-page.spec.ts
+
+# 特定のブラウザでテスト
+npx playwright test --project=chromium
+npx playwright test --project="Mobile Chrome"
+
+# ヘッドモードで実行（ブラウザ表示）
+npx playwright test --headed
+
+# 失敗したテストのみ再実行
+npx playwright test --last-failed
+
+# 並列実行数を指定
+npx playwright test --workers=2
+```
+
+### 📈 継続的テスト
+
+#### 開発中のテスト
+
+```bash
+# ファイル変更を監視してテスト実行
+npx playwright test --watch
+```
+
+#### プッシュ前のテスト
+
+```bash
+# 包括的なテストセット
+./scripts/test.sh all
+
+# 型チェック + ビルドテスト + E2Eテスト
+npm run type-check && npm run build && npm test
+```
+
+### 🚨 トラブルシューティング
+
+| 問題                                                  | 解決方法                                          |
+| ----------------------------------------------------- | ------------------------------------------------- |
+| `Error: browserType.launch: Executable doesn't exist` | `npx playwright install` でブラウザをインストール |
+| `Error: Timed out waiting for WebServer`              | 開発サーバーが起動していることを確認              |
+| テストが失敗する                                      | `./scripts/test.sh clean` でキャッシュをクリア    |
+| スナップショットが一致しない                          | `npx playwright test --update-snapshots` で更新   |
 
 詳細なテスト結果は [TEST_REPORT.md](TEST_REPORT.md) をご確認ください。
 
