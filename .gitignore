@@ -43,3 +43,4 @@ tests/**/*-snapshots/
 # Next.js
 .next/
 out/ 
+/generated/prisma
