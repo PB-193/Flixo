@@ -22,9 +22,15 @@
     "test:quick": "./scripts/test.sh desktop",
     "push": "./scripts/auto-test-push.sh",
     "push:develop": "./scripts/auto-test-push.sh develop",
-    "push:main": "./scripts/auto-test-push.sh main"
+    "push:main": "./scripts/auto-test-push.sh main",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:studio": "prisma studio",
+    "db:reset": "prisma migrate reset"
   },
   "dependencies": {
+    "@prisma/client": "^6.11.1",
     "@types/node": "22.10.1",
     "@types/react": "19.0.1",
     "@types/react-dom": "19.0.1",
@@ -34,6 +40,7 @@
     "lucide-react": "0.468.0",
     "next": "15.1.0",
     "postcss": "8.5.3",
+    "prisma": "^6.11.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "tailwind-merge": "2.5.4",

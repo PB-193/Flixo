@@ -33,7 +33,7 @@ export default function VideoPostForm({ onVideoAdded, onCancel }: VideoPostFormP
 
       const thumbnailUrl = getYouTubeThumbnail(videoId)
       
-      addVideo({
+      await addVideo({
         title: title || 'Untitled Video',
         url,
         thumbnailUrl,
@@ -43,9 +43,9 @@ export default function VideoPostForm({ onVideoAdded, onCancel }: VideoPostFormP
       })
 
       onVideoAdded()
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error adding video:', error)
-      alert('動画の投稿に失敗しました')
+      alert(error.message || '動画の投稿に失敗しました')
     } finally {
       setIsSubmitting(false)
     }

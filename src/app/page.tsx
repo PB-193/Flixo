@@ -1,18 +1,36 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { getVideos } from '@/lib/data'
+import { Video } from '@/types/video'
 import VideoGrid from '@/components/VideoGrid'
 import VideoPostForm from '@/components/VideoPostForm'
 import { Button } from '@/components/ui/button'
 import { Plus } from 'lucide-react'
 
 export default function Home() {
-  const [videos, setVideos] = useState(getVideos())
+  const [videos, setVideos] = useState<Video[]>([])
   const [showPostForm, setShowPostForm] = useState(false)
+  const [loading, setLoading] = useState(true)
+
+  const loadVideos = async () => {
+    setLoading(true)
+    try {
+      const videosData = await getVideos()
+      setVideos(videosData)
+    } catch (error) {
+      console.error('Failed to load videos:', error)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    loadVideos()
+  }, [])
 
   const handleVideoAdded = () => {
-    setVideos(getVideos())
+    loadVideos()
     setShowPostForm(false)
   }
 
@@ -44,6 +62,13 @@ export default function Home() {
               onVideoAdded={handleVideoAdded}
               onCancel={() => setShowPostForm(false)}
             />
+          ) : loading ? (
+            <div className="flex items-center justify-center min-h-[400px]">
+              <div className="text-center">
+                <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                <p className="text-slate-600 dark:text-slate-400">動画を読み込み中...</p>
+              </div>
+            </div>
           ) : (
             <VideoGrid videos={videos} onAddVideo={() => setShowPostForm(true)} />
           )}
