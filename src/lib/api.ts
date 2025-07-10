@@ -1,8 +1,8 @@
 import { Video } from '@/types/video'
 
 const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://your-app.vercel.app' 
-  : 'http://localhost:3001'
+  ? process.env.NEXT_PUBLIC_API_URL || '' 
+  : typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3001'
 
 // 全動画を取得
 export async function fetchVideos(): Promise<Video[]> {
