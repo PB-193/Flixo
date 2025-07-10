@@ -4,9 +4,10 @@ import { prisma } from '@/lib/prisma'
 // GET /api/videos/[id] - 特定の動画を取得
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  context: { params: Promise<{ id: string }> }
 ) {
   try {
+    const params = await context.params
     const video = await prisma.video.findUnique({
       where: {
         id: params.id
@@ -33,9 +34,10 @@ export async function GET(
 // PUT /api/videos/[id] - 動画を更新
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  context: { params: Promise<{ id: string }> }
 ) {
   try {
+    const params = await context.params
     const body = await request.json()
     const { title, category, description } = body
 
@@ -63,9 +65,10 @@ export async function PUT(
 // DELETE /api/videos/[id] - 動画を削除
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  context: { params: Promise<{ id: string }> }
 ) {
   try {
+    const params = await context.params
     await prisma.video.delete({
       where: {
         id: params.id
